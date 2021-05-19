@@ -15,6 +15,9 @@ body {
 }
 
 /* Navagation */
+nav.navbar {
+  background-color: #24242b
+}
 @media (max-width: 992px) {
   .navbar {
     padding: 0 15px !important;
@@ -55,8 +58,12 @@ nav a {
 }
 
 /* Home */
+section#home {
+  height: 100vh;
+}
 .home-info {
-  padding: 160px 0 160px;
+  padding-top: 161px;
+  /* padding: 160px 0 160px; */
 }
 
 @media (max-width: 992px) {
@@ -100,6 +107,11 @@ a.badge:focus {
   background-color: #80ffea;
   color: #24242b;
   box-shadow: none;
+}
+
+/* Portfolio */
+section#portfolio {
+  background-color: #353537;
 }
 
 
