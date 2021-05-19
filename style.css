@@ -2,6 +2,9 @@
 .container-fluid {
   max-width: 1200px;
 }
+:root {
+  scroll-behavior: smooth;
+}
 
 /* Custom Utility */
 .primary-color {
@@ -12,6 +15,7 @@
 /* Body */
 body {
   background-color: #24242b;
+  scroll-behavior: smooth;
 }
 
 /* Navagation */
@@ -24,7 +28,7 @@ nav.navbar {
   }
 }
 nav.navbar {
-  padding: 30px 0 30px;
+  padding: 25px 0 25px;
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
@@ -32,14 +36,16 @@ nav a {
   color: #fff !important;
 }
 
-.navbar-nav li:hover {
+.navbar-nav li:hover,
+.active {
   border-bottom: 3px solid #80ffea;
   margin-bottom: -3px;
 }
 
 @media (max-width: 992px) {
 
-  .navbar-nav li:hover {
+  .navbar-nav li:hover,
+  .active {
     border-bottom: 0;
     margin-bottom: 0;
   }
@@ -57,28 +63,21 @@ nav a {
   margin-right: 1.5em;
 }
 
-/* Home */
-section#home {
-  height: 100vh;
-}
-.home-info {
-  padding-top: 161px;
-  /* padding: 160px 0 160px; */
-}
-
 @media (max-width: 992px) {
   .home-info {
     padding-top: 60px;
   }
 }
-
+.welcome-info {
+  height: 100vh;
+}
 .welcome-info h1 {
   font-size: 70px;
 }
 
 .welcome-info .wave {
   font-size: 150px;
-  animation: wave .3s .8s 2;
+  animation: wave .3s .5s 3;
 }
 
 .welcome-info p {
@@ -109,10 +108,62 @@ a.badge:focus {
   box-shadow: none;
 }
 
+
+
 /* Portfolio */
 section#portfolio {
   background-color: #353537;
 }
+.portfolio-wrap {
+  padding: 160px 0 160px;
+}
+.portfolio-wrap h2::after {
+  display: block;
+}
+
+.card {
+  border-color: rgba(255, 255, 255, .1);
+  background-color: #24242b;
+}
+
+.card .btn-primary {
+  background-color: #80ffea;
+  color: #24242b;
+  border-color: #24242b;
+}
+
+/* About */
+section#about {
+  color: white;
+}
+
+#about .about-me
+{
+  padding: 160px 0 160px;
+  line-height: 1.8em;
+}
+ h2 {
+  font-size: 50px;
+}
+
+h2::after {
+  content: "";
+  position: relative;
+  display: block;
+  background-color: #80ffea;
+  width: 100px;
+  height: 5px;
+  margin-top: 19px;
+}
+
+.about-info,
+.about-info a {
+  color: #80ffea;
+}
+
+
+
+
 
 
 
