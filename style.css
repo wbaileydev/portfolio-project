@@ -71,7 +71,7 @@ nav a {
 
 .welcome-info .wave {
   font-size: 150px;
-  animation: wave .3s 2;
+  animation: wave .3s .8s 2;
 }
 
 .welcome-info p {
@@ -92,6 +92,14 @@ nav a {
 
 .wave:hover {
   animation: wave .3s infinite;
+}
+
+.welcome-info .badge-primary,
+a.badge:hover,
+a.badge:focus {
+  background-color: #80ffea;
+  color: #24242b;
+  box-shadow: none;
 }
 
 
