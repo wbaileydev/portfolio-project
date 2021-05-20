@@ -91,7 +91,7 @@ nav a {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(20deg);
+    transform: rotate(-20deg);
   }
   100% {
     transform: rotate(0deg);
